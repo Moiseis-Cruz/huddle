@@ -1,0 +1,180 @@
+html {
+    font-size: 62.5%;
+}
+body {
+    display: grid;
+    grid-template-areas: "cabecalho cabecalho"
+    "hero hero"
+    "rodape rodape";
+    grid-template-columns: minmax(100px,900px) minmax(100px,500px);
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background: url(../images/bg-desktop.svg) center center no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 20px 70px 0;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+}
+
+.cabecalho .logo {
+    width: 200px;
+}
+
+.cabecalho .logo img {
+    width: 100%;
+}
+
+.hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-areas: "image anuncio";
+    grid-template-columns: minmax(100px,900px) minmax(100px,500px);
+    color: #fff;
+}
+
+.hero .image {
+    grid-area: image;
+    margin-right: 25px;
+}
+
+.hero .image img {
+    width: 100%;
+}
+
+.hero .anuncio {
+    width: 100%;
+    grid-area: anuncio;
+    margin-top: 40px;
+    margin-left: 25px;
+}
+
+.hero .anuncio h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.hero .anuncio p {
+    margin-top: 20px;
+    width: 460px;
+}
+
+
+.hero .anuncio a .btn {
+    background-color: wheat;
+    margin-top: 30px;
+    text-align: center;
+    width: 200px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: hsl(257, 40%, 49%);
+}
+
+.hero .anuncio a .btn:active {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.rodape {
+    grid-area: rodape;
+    text-align: center;
+}
+
+.rodape .redes-sociais {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.rodape .redes-sociais a {
+    font-size: 2rem;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin: 8px;
+    color: #fff;
+}
+
+.rodape .redes-sociais a:active {
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas: "cabecalho"
+        "hero"
+        "rodape";
+        grid-template-columns: 1fr;
+        background: url(../images/bg-mobile.svg) center center no-repeat;
+        background-size: cover;
+        background-color: hsl(257, 40%, 49%);
+        max-width: 375px;
+        padding: 20px 30px 0;
+    }
+    
+    .cabecalho .logo {
+        width: 160px;
+    }
+    
+    .hero {
+        grid-area: hero;
+        display: grid;
+        grid-template-areas: "image"
+        "anuncio";
+        grid-template-columns: 1fr;
+        text-align: center;
+        margin-top: 40px;
+    }
+    
+    .hero .image {
+        grid-area: image;
+        margin-right: 0;
+    }
+    
+    .hero .anuncio {
+        grid-area: anuncio;
+        margin-top: 60px;
+        margin-left: 0;
+    }
+    
+    .hero .anuncio h2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    
+    .hero .anuncio p {
+        margin: 20px auto 0;
+        font-size: 1.6rem;
+        max-width: 30rem;
+    }
+    
+    .hero .anuncio a .btn {
+        padding: 6px 80px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .rodape .redes-sociais {
+        margin-top: 40px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .rodape .redes-sociais a {
+        font-size: 2rem;
+    }
+}
