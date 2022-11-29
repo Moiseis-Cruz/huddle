@@ -7,7 +7,7 @@ body {
     "hero hero"
     "rodape rodape";
     grid-template-columns: minmax(100px,900px) minmax(100px,500px);
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     background: url(../images/bg-desktop.svg) center center no-repeat;
@@ -58,7 +58,8 @@ body {
 .hero .anuncio h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 3.5rem;
+    width: 400px;
 }
 
 .hero .anuncio p {
