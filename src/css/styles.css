@@ -23,12 +23,8 @@ body {
     grid-area: cabecalho;
 }
 
-.cabecalho .logo {
+.cabecalho img {
     width: 200px;
-}
-
-.cabecalho .logo img {
-    width: 100%;
 }
 
 .hero {
