@@ -53,7 +53,7 @@ body {
 
 .hero .anuncio h2 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 3.5rem;
     max-width: 400px;
 }
@@ -61,10 +61,12 @@ body {
 .hero .anuncio p {
     margin-top: 20px;
     width: 460px;
+    font-weight: 400;
 }
 
 
 .hero .anuncio a .btn {
+    font-family: 'Poppins', sans-serif;
     background-color: #fff;
     margin-top: 30px;
     text-align: center;
