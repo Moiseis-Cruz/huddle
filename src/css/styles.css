@@ -76,7 +76,7 @@ body {
     color: hsl(257, 40%, 49%);
 }
 
-.hero .anuncio a .btn:active {
+.hero .anuncio a .btn:hover {
     background-color: hsl(300, 69%, 71%);
     color: #fff;
 }
@@ -105,7 +105,7 @@ body {
     color: #fff;
 }
 
-.rodape .redes-sociais a:active {
+.rodape .redes-sociais a:hover {
     color: hsl(300, 69%, 71%);
     border: 1px solid hsl(300, 69%, 71%);
 
